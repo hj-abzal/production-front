@@ -11,7 +11,7 @@ export const Navbar: FC<NavbarProps> = ({className}) => {
         <div className={classNames(cls.Navbar, {}, [className])}>
             <div className={cls.links}>
                 <AppLink to={'/'} className={cls.mainLinks}>main</AppLink>
-                <AppLink to={'/about'} className={cls.mainLinks}>about</AppLink>
+                <AppLink to={'about'} className={cls.mainLinks}>about</AppLink>
             </div>
         </div>
     );

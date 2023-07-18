@@ -16,3 +16,6 @@ declare module "*.svg" {
     const SVG: React.VFC<React.SVGProps<SVGSVGElement>>;
     export default SVG;
 }
+
+//Types for custom vars in webpack located in buildPlugins
+declare const __IS_DEV__: boolean;
