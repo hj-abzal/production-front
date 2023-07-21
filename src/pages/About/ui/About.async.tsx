@@ -1,4 +1,4 @@
-import {lazy} from 'react';
+import { lazy } from 'react';
 
 // @ts-ignore
-export const AboutAsyncPage = lazy(() => import('./About'))
+export const AboutAsyncPage = lazy(() => import('./About'));

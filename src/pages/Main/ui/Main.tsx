@@ -1,12 +1,11 @@
 import React from 'react';
-import {useTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
-export const Main = () => {
-    const {t} = useTranslation('main')
+export function Main() {
+    const { t } = useTranslation('main');
     return (
         <div>
             {t('TITLE')}
         </div>
     );
-};
-
+}

@@ -11,11 +11,12 @@ declare module '*.jpg';
 declare module '*.jpeg';
 declare module '*.png';
 
-declare module "*.svg" {
+declare module '*.svg' {
     import React from 'react';
+
     const SVG: React.VFC<React.SVGProps<SVGSVGElement>>;
     export default SVG;
 }
 
-//Types for custom vars in webpack located in buildPlugins
-declare const __IS_DEV__: boolean;
+// Types for custom vars in webpack located in buildPlugins
+// declare const __IS_DEV__: boolean;
