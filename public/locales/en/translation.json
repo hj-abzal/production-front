@@ -1,3 +1,7 @@
 {
+  "ERROR_BOUNDARY": {
+    "RELOAD": "Reload page",
+    "TITLE": "Some error occurred!"
+  },
   "PAGE_NOT_FOUND": "Page not found"
 }
