@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC, useState } from 'react';
 import { classNames } from 'shared/libs/classNames';
 import { Button } from 'shared/ui/Button/Button';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
@@ -6,7 +6,7 @@ import { LangSwitcher } from 'widgets/LangSwitcher';
 import cls from './Sidebar.module.scss';
 
 interface SidebarProps {
-    className?: string
+    className?: string;
 }
 export const Sidebar: FC<SidebarProps> = ({ className }) => {
     const [collapsed, setCollapsed] = useState(false);
@@ -15,11 +15,6 @@ export const Sidebar: FC<SidebarProps> = ({ className }) => {
         setCollapsed((prev) => !prev);
     };
 
-    useEffect(() => {
-        if (collapsed) {
-            throw new Error();
-        }
-    }, [collapsed]);
     return (
         <div className={
             classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])
